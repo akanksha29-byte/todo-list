@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  color: grey;
+  font-family: 'Outfit', sans-serif;
+}
+
+.header{
+  background-color: orange;
+  padding: 15px;
+  width: 100%;
+  nav{
+    max-width: 950px;
+    margin: auto;
+  }
+}
+.content-container{
+  display: flex;
+  width: 900px;
+  margin: auto;
+}
+
+.sidebar-container{
+  height: 100vh;
+  width: 300px;
+
+  div{
+   user-select: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   &.active{
+     background-color: whitesmoke
+   }
+  }
+
+  .icon{
+    margin-right: 10px;
+  }
+}
+
+.task-container{
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+  
+  .add-task-btn{
+    cursor: pointer;
+    .add-icon{
+     color: red;
+   }
+  }
+ 
+  .task-input-dialog{
+    input{
+      padding: 10px 20px;
+      width: 100%;
+      font-size: 15px;
+      outline: none;
+      border-radius: 8px;
+      border: 1px solid whitesmoke
+    }
+
+    .btn-container{
+      width:100%;
+      margin: 10px 0px ;
+      .btn{
+        all: unset;
+        padding: 10px 20px;
+        margin-right: 5px;
+        font-size: 15px;
+        border-radius: 8px;
+        font-weight: 300;
+        cursor: pointer;
+        &:disabled{
+          background-color: gray;
+        }
+      }
+     
+
+      .btn-primary{
+        background-color: orange;
+        color: white;
+      }
+    }
+  }
+
+  .display-task{
+    width: 100%;
+    margin-top: 20px;
+    .card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 44px;
+      margin-bottom: 5px;
+      background-color: whitesmoke;
+      padding: 20px
+    }
+
+    button{
+      all: unset;
+     background-color:lightblue;
+     padding: 5px 10px;
+     color: white;
+     border-radius: 8px;
+    }
+  }
+
+}
